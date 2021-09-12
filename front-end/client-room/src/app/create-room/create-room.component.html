@@ -1,0 +1,30 @@
+<h3>Create Room</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form [formGroup]="cadastro" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" formControlName="name" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Date</label>
+      <input type="text" class="form-control" formControlName="date" id="date" name="date">
+    </div>
+
+    <div class="form-group">
+      <label for="name">startHour</label>
+      <input type="text" class="form-control" formControlName="startHour" id="startHour" name="startHour">
+    </div>
+
+    <div class="form-group">
+        <label for="name">endHour</label>
+        <input type="text" class="form-control" formControlName="endHour" id="endHour" name="endHour">
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <button class="btn btn-success" (click)="resetForm()">Add</button> -->
+</div>
